@@ -7,10 +7,12 @@ iris=load_iris()
 data=iris.data
 field=iris.feature_names
 index=iris.target
-
 df=pd.DataFrame(data,index,field)
 print(df)
 
 for i in range(0,3):
     plt.scatter(data[index==i,0],data[index==i,1])
+    plt.xlabel(field[0])
+    plt.ylabel(field[1])
+    plt.legend(iris.target_names)
 plt.show()
