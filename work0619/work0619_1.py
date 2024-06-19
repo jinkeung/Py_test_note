@@ -43,10 +43,10 @@ model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 
 # 예측 결과 평가
-mse = mean_squared_error(y_test, y_pred)
-r2 = r2_score(y_test, y_pred)
-print(f'Mean Squared Error: {mse}')
-print(f'R-squared: {r2}')
+#mse = mean_squared_error(y_test, y_pred)
+#r2 = r2_score(y_test, y_pred)
+#print(f'Mean Squared Error: {mse}')
+#print(f'R-squared: {r2}')
 
 # 향후 30일간의 예측
 future_predictions = []
@@ -77,4 +77,4 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
 
-print(future_data)
+#print(future_data)
